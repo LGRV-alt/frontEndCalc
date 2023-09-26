@@ -9,12 +9,11 @@ h1{
 }
 
 .calculator{
-    width: 500px;
-    height: 500px;
-    background-color: gray;
+    border: 5px black solid;
+    background-color: black;
     display: grid;
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 2px;
+    row-gap: 2px;
     grid-template-areas: "totalScreen totalScreen totalScreen totalScreen"
                         "clear clear removeButton divide"
                         "btn btn btn multi"
@@ -25,44 +24,54 @@ h1{
 }
 
 .btn{
-    background-color: orange;
+    background-color: white;
+    height: 70px;
+    font-size: 1.5rem;
+    
+    
+    
     
 }
 
 .totalScreen{
-    background-color: red;
+    background-color: black;
     grid-area: totalScreen;
+     height: 100px;
+     width: 400px;
 
 
 }
 
 .clearButton{
-    background-color: blue;
     grid-area: clear;
 }
 
 .removeButton{
-    background-color: orange;
     grid-area: removeButton;
 }
 
 .divide{
+    background-color: orangered;
     grid-area: divide;
 }
 
 .multiButton{
+    background-color: orangered;
     grid-area: multi;
 }
 
 .minusButton{
+    background-color: orangered;
     grid-area: minus;
 }
 
 .addButton{
+    background-color: orangered;
     grid-area: add;
 }
 
 .equalsButton{
+    background-color: orangered;
     grid-area: equals;
 }
 
