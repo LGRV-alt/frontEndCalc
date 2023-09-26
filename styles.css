@@ -1,0 +1,42 @@
+h1{
+    color: red;
+}
+
+
+
+.calculator{
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: "totalScreen totalScreen totalScreen totalScreen"
+                        "clear clear removeButton divide";
+}
+
+/* .btn{
+    
+} */
+
+.totalScreen{
+    background-color: red;
+    grid-area: totalScreen;
+
+}
+
+
+.clearButton{
+    background-color: blue;
+    grid-area: clear;
+}
+
+.removeButton{
+    background-color: orange;
+    grid-area: removeButton;
+}
+
+.divide{
+    background-color: black;
+    grid-area: divide;
+}
