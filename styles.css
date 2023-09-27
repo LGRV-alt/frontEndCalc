@@ -1,11 +1,9 @@
-h1{
-    color: red;
-}
 
 .calcHolder{
     display: flex;
     justify-content: center;
     margin-top: 200px;
+    
 }
 
 .calculator{
@@ -24,23 +22,49 @@ h1{
 }
 
 .btn{
-    background-color: white;
+    background-color: rgb(211, 210, 210);
     height: 70px;
     font-size: 1.5rem;
-    
-    
-    
-    
+    border: none;
 }
+
+.btn:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: rgb(156, 155, 155);
+}
+
+.op{
+    background-color: rgb(212, 99, 58);
+}
+
+.op:hover{
+    background-color: rgb(255, 148, 109);
+}
+
+.op:active{
+    background-color: orangered;
+}
+
+
 
 .totalScreen{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
     background-color: black;
     grid-area: totalScreen;
+    font-size: 2rem;
      height: 100px;
      width: 400px;
-
-
+     color: white;
+     margin-right: 15px;
 }
+
+
 
 .clearButton{
     grid-area: clear;
@@ -51,27 +75,22 @@ h1{
 }
 
 .divide{
-    background-color: orangered;
     grid-area: divide;
 }
 
 .multiButton{
-    background-color: orangered;
     grid-area: multi;
 }
 
 .minusButton{
-    background-color: orangered;
     grid-area: minus;
 }
 
 .addButton{
-    background-color: orangered;
     grid-area: add;
 }
 
 .equalsButton{
-    background-color: orangered;
     grid-area: equals;
 }
 
