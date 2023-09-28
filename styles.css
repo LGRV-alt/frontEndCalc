@@ -92,6 +92,7 @@
 
 .equalsButton{
     grid-area: equals;
+    background-color: rgb(212, 99, 58);;
 }
 
 .zero{
