@@ -8,6 +8,21 @@ let runningTotal = ""
 let opState = ""
 let prevNumber = ""
 
+function linkDisplay(){
+    display.innerHTML = runningTotal;
+}
+
+
+function clearAll(){
+    runningTotal = "";
+    linkDisplay();
+}
+
+function removeDigit(){
+    runningTotal = runningTotal.slice(0,-1);
+    linkDisplay();
+}
+
 numButton.forEach((number)=>{
     number.addEventListener("click", ()=>{
         let num = number.innerHTML;
@@ -27,11 +42,14 @@ opButton.forEach((operator)=>{
 
 clearButton.addEventListener("click", ()=>{
     console.log("Clear")
+    clearAll();
 });
 
 removeButton.addEventListener("click", ()=>{
     console.log("Remove")
+    removeDigit();
 })
+
 
 
 
