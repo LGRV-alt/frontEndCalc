@@ -83,17 +83,13 @@ function calculateTotal(num1, num2, operator){
                 total = cal.div(newNum1, newNum2);
                 break;
 
-            case "*":
+            case "*":                   
                 total = cal.mul(newNum1, newNum2);
                 break;
         }
-        console.log(total);
-    }
-
-
-}
-
-
+        return total;
+    }    
+};
 
 numButton.forEach((number)=>{
     number.addEventListener("click", ()=>{
@@ -118,7 +114,12 @@ removeButton.addEventListener("click", ()=>{
 })
 
 equalsButton.addEventListener("click", ()=>{
-    calculateTotal(prevNumber, runningTotal, opState);
+    runningTotal = calculateTotal(prevNumber, runningTotal, opState);
+    linkDisplay();
+    prevNumber = ""
+    opState =""
+
+
 })
 
 
